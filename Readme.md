@@ -1,5 +1,7 @@
 This code shows the real time streaming of tweets with Flask and StreamIO to your apps, after doing some processing on your backend. So it flows as follows in realtime. 
+```
 Twitter -- (TwitterStreaming) --> YourBackend -- (Flask/StreamIO) --> YourFrontend
+```
 
 YourBackend -- (Flask/StreamIO) --> YourFrontend part code is taken (after stripping off the listening part, so kept only one way communication codes from server to client) from very helpful tutorial by Miguel Grinberg on the topic:  http://blog.miguelgrinberg.com/post/easy-websockets-with-flask-and-gevent
 with accompanying github repo: https://github.com/miguelgrinberg/Flask-SocketIO
