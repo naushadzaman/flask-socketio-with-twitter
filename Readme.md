@@ -8,17 +8,23 @@ I added Twitter -- (TwitterStreaming) --> YourBackend part to accompany rest of 
 
 You have to add twitter credentials in the cred parameter in app.py. Also to test other keywords, change the list _keywords. 
 
-# Setup the virtual environment 
+# Setup the virtual environment
+```
 $ virtualenv --dist venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt 
-
+```
 OR 
 # If you don't want virtualenv
+```
 $ sudo pip install -r requirements.txt
+```
 
 # Run the server
+```
 $ python app.py 
-
+```
 # Checkout the output in the browser. 
+```
 http://127.0.0.1:5000
+```
