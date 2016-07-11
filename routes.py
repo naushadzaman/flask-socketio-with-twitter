@@ -99,10 +99,12 @@ def index():
 
 if __name__ == '__main__':
     l = StdOutListener()
-    cred = {"access_key": "", 
-                "access_secret": "", 
-                "consumer_key": "", 
-                "consumer_secret": ""}
+    cred = {
+                "access_key": "2205133962-3ZEARi52Luqse6htqPamsa0SsZlIPDdvplfL7oE", 
+                "access_secret": "nBfPbx5fGGT3SFp9ddoLBqiK4AtnhIkjfAOgBCyGpRpqJ", 
+                "consumer_key": "03YRGcU9aQ38fjdsyDBsbbcXx", 
+                "consumer_secret": "7VStzc9E5WkkX5Elb9XbRg5GWJeyXMz9vEQixMf8qTPH3ZFfc7"
+            }
     auth = tweepy.OAuthHandler(cred['consumer_key'], cred['consumer_secret'])
     auth.set_access_token(cred['access_key'], cred['access_secret'])
 
