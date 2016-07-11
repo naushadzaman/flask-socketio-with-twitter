@@ -58,7 +58,6 @@ app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, async_mode=async_mode)
 thread = None
 
-l = StdOutListener()
 cred = {
             "access_key": "2205133962-3ZEARi52Luqse6htqPamsa0SsZlIPDdvplfL7oE", 
             "access_secret": "nBfPbx5fGGT3SFp9ddoLBqiK4AtnhIkjfAOgBCyGpRpqJ", 
@@ -67,6 +66,7 @@ cred = {
         }
 auth = tweepy.OAuthHandler(cred['consumer_key'], cred['consumer_secret'])
 auth.set_access_token(cred['access_key'], cred['access_secret'])
+
 
 
 def do_whatever_processing_you_want(text): 
@@ -107,6 +107,8 @@ def index():
         thread.start()
     return render_template('index.html')
 
+
+l = StdOutListener()
 
 if __name__ == '__main__':
     socketio.run(app, debug=True)
