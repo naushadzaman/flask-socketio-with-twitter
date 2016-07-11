@@ -83,6 +83,7 @@ class StdOutListener(StreamListener):
             socketio.emit('stream_channel',
                   {'data': text, 'time': tweet[u'timestamp_ms']},
                   namespace='/demo_streaming')
+            print text
         except: 
             pass 
 
