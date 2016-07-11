@@ -10,6 +10,11 @@ I added Twitter -- (TwitterStreaming) --> YourBackend part to accompany rest of 
 
 You have to add twitter credentials in the cred parameter in app.py. Also to test other keywords, change the list _keywords. 
 
+```
+$ sudo apt-get install -y libatlas-base-dev gfortran python-dev build-essential g++
+$ sudo apt-get install libffi-dev libssl-dev
+
+```
 # Setup the virtual environment
 ```
 $ virtualenv --dist venv
